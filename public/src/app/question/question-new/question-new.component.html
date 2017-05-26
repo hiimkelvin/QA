@@ -1,0 +1,11 @@
+<a href="/logout">Logout</a>
+
+<h1>New Question</h1>
+
+<form (submit)="addQuestion(formData)" #formData="ngForm">
+  <p>Question</p>
+  <textarea name="question" id="" cols="30" rows="10" ngModel></textarea>
+  <p>Description (optional)</p>
+  <textarea name="description" id="" cols="30" rows="10" ngModel></textarea>
+	<input type="submit">
+</form>

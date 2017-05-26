@@ -1,0 +1,17 @@
+<!--{{ questions | json }}-->
+
+<table>
+	<tr>
+		<th>Questions</th>
+		<th>Answers</th>
+		<th>Actions</th>
+	</tr>
+	<tr *ngFor="let question of questions">
+		<td>{{ question.question }}</td>
+		<td>{{ question._answer }}</td>
+    <td>
+      <a [routerLink]="['show', question._id]">Show</a>
+      <a [routerLink]="['answer', question._id]">Answer</a>
+    </td>
+	</tr>
+</table>

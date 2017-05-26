@@ -1,0 +1,8 @@
+<h1 *ngIf="user">Hi {{user.name}}!</h1>
+<a href="/logout">Logout</a>
+
+<a [routerLink]="['new']">Add a Question</a>
+
+<router-outlet></router-outlet>
+
+

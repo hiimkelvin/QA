@@ -1,0 +1,13 @@
+<a [routerLink]="['/question']">Home</a>
+
+<h1>{{ question.question }}?</h1>
+<p>{{ question.description }}</p>
+
+<form (submit)='createAnswer(formData, question._id)' #formData='ngForm'>
+  <p>Your Answer:</p>
+  <textarea name="answer" id="answer" cols="75" rows="5" ngModel></textarea>
+  <p>Supporting details for your answer (optional)</p>
+  <textarea name="details" id="details" cols="75" rows="5" ngModel></textarea>
+  <p><input type="submit" value="Submit"></p>
+</form>
+
